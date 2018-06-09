@@ -10,7 +10,7 @@
 	color: #fff
 
 body
-	font-size: 16pt
+	font-size: 1em
 	min-width: 320px
 	position: relative
 	line-height: 1.65
@@ -30,63 +30,58 @@ body
 
 .banner
 	background-color: #0066a1
-	text-align: center
 	color: #fff
 	height: 50px
 	line-height: 50px
-	.container
-		width: 920px
+	justify-content: center
 	.banner-tagline
 		font-family: robotobold,sans-serif
 		font-size: 16px
 		margin-bottom: 0
-		display: inline-block
 	.close
 		margin-top: 13px
-		margin-right: 0
+		margin-left: 10px
 		width: 23px
 		height: 23px
 		background-image: url(../img/close.png)
 
-
-.menu
-	height: 65px
-	max-width: 1360px
-	margin: 0 auto
-	background-color: #fff
-	position: relative
-
-.nav
-	margin-left: 120px
-	height: 65px
-	line-height: 65px
-	.nav-link
-		color: black
-		padding-top: 0
-		padding-bottom: 0
-		font-family: robotobold,sans-serif
-		font-weight: 800
-		font-size: 14px
-		&:focus, &:hover
-			text-decoration: underline
-			color: #149ed8
-
 .logo
 	position: absolute
 	z-index: 1
-	left: 80px
+	padding: 5px 0 0 60px
 	a img
 		width: 86px
 		height: 86px
 
-.language
-	position: absolute
-	top: 0
-	right: 180px
+
+.navbar
+	padding: 0 8px
+	justify-content: center
+
+.navbar-collapse
+	justify-content: center
+
+.navbar-nav
 	height: 65px
 	line-height: 65px
+	.nav-link
+		color: black
+		text-transform: uppercase
+		padding-top: 0
+		padding-bottom: 0
+		font-family: robotobold,sans-serif
+		font-weight: 800
+		font-size: 13px
+		&:focus, &:hover
+			text-decoration: underline
+			color: #149ed8
+
+
+.language
 	font-family: robotobold,sans-serif
 	font-size: 14px
+	height: 65px
+	line-height: 65px
 	.ru, .en
 		color: black
 		&:focus, &:hover
@@ -100,29 +95,30 @@ body
 
 
 .search
-	position: absolute
-	z-index: 1
-	top: 14px
-	right: 116px
+	height: 60px
+	line-height: 60px
+	padding-left: 10px
 	a img
 		width: 24px
 		height: 24px
 
 .section
 	position: relative
-
-.tagline
-	position: absolute
-	color: #fff
-	font-family: notoserifitalic
-	font-style: italic
-	font-weight: 400
-	z-index: 1
-	font-size: 27px
-	top: 28px
-	margin-left: 50%
-	transform: translate(-50%, 0)
-
+	.container
+		padding-right: 0
+		padding-left: 0
+		text-align: center
+		.tagline
+			position: absolute
+			color: #fff
+			font-family: notoserifitalic
+			font-style: italic
+			font-weight: 400
+			z-index: 1
+			font-size: 27px
+			top: 20px
+			margin-left: 50%
+			transform: translate(-50%, 0)
 
 .composition
 	position: absolute
@@ -131,11 +127,11 @@ body
 	width: 670px
 	height: 260px
 	border-radius: 8px
-	top: 50%
+	top: 90px
 	left: 50%
 	padding-top: 30px
 	margin-right: -50%
-	transform: translate(-50%, -50%)
+	transform: translate(-50%, 0)
 	text-align: center
 	div
 		display: flex
@@ -175,8 +171,10 @@ body
 		margin-left: 50%
 		transform: translate(-50%, 0)
 		border-radius: 6px
+		cursor: pointer
 		p
 			padding-top: 9px
+
 .carousel-control-prev,.carousel-control-next
 	opacity: .7
 
@@ -201,6 +199,7 @@ body
 		width: 12px
 		height: 12px
 		border-radius: 50%
+		cursor: pointer
 	li.active
 		background-image: url(../img/Эллипс2.png)
 

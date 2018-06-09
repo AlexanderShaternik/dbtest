@@ -1,71 +1,143 @@
-@import "vars"
 
-/*==========  Desktop First  ==========*/
+
 
 // ≥1280px
-+media-breakpoint-down(lg)
++media-breakpoint-down(xl)
+
 
 // ≥1024px
-+media-breakpoint-down(md)
-    .nav
-        margin-left: 114px
-        .nav-link
-            font-size: 13px
-            padding-right: 5px
-            padding-left: 5px
++media-breakpoint-down(lg)
 
-    .log
-        left: 40px
-    .search
-        right: 40px
-
-    .language
-        right: 100px
+    .logo
+        padding-left: 25px
 
 // ≥768px
-+media-breakpoint-down(sm)
-    .nav
-        margin-left: 0
++media-breakpoint-down(md)
+    .banner
+        .banner-tagline
+            font-size: 14px
+
     .logo
-        left: 15px
+        padding-left: 15px
+        a img
+            width: 50px
+            height: 50px
+
+    .navbar-nav
+        height: 45px
+        line-height: 45px
+        .nav-item
+            .nav-link
+                font-size: 10px
+                padding-left: 4px
+                padding-right: 4px
+
     .search
-        right: 15px
+        height: 40px
+        line-height: 40px
+        a img
+            width: 14px
+            height: 14px
+
     .language
-        right: 80px
-    .tagline
-        top: 15px
-        font-size: 17px
+        height: 45px
+        line-height: 45px
+        font-size: 10px
+
+    .section
+        .container
+            .tagline
+                font-size: 24px
+                top: 12px
+
     .composition
-        padding-top: 20px
-        width: 500px
-        height: 200px
+        width: 450px
+        height: 180px
+        top: 60px
+        padding-top: 10px
         span
             font-size: 12px
+        .orange
+            margin-bottom: 10px
         .strong
-            font-size: 32px
-            margin-bottom: 20px
+            font-size: 30px
+            margin-bottom: 25px
         .button
-            width: 160px
-            height: 32px
-            font-size: 12px
+            width: 140px
+            height: 30px
+            font-size: 11px
             p
-                padding-top: 7px
-    .banner-tagline
-        font-size: 12px !important
-    .close
-        margin-top: 15px !important
+                padding-top: 6px
+
 
 // ≥0px
 +media-breakpoint-down(xs)
+    .banner
+        .banner-tagline
+            font-size: 1.5vw
+        .close
+            margin-top: 20px
+            width: 10px
+            height: 10px
+            background-size: cover
 
-/*==========  Mobile First  ==========*/
+    .navbar-toggler
+        width: 40px
+        height: 40px
+        .navbar-toggler-icon
+            width: 20px
+            height: 20px
+            background-image: url(../img/menu.png)
 
-// ≤768px
-+media-breakpoint-up(sm)
+    .navbar-collapse
+        height: 115px
+        .navbar-nav
+            height: 100%
+            .nav-item
+                height: 16px
+                .nav-link
+                    font-size: 10px
+    .section
+        .container
+            .tagline
+                font-size: 2vw
+                top: 3%
+    .language
+        font-family: robotobold,sans-serif
+        font-size: 8px
 
-// ≤1024px
-+media-breakpoint-up(md)
+    .composition
+        width: 60%
+        height: 60%
+        top: 16%
+        padding-top: 3%
+        span
+            font-size: 1.75vw
+        .orange
+            margin-bottom: 3%
+        .strong
+            font-size: 3.5vw
+            margin-bottom: 4%
+        .button
+            width: 38%
+            height: 18%
+            font-size: 1.75vw
+            p
+                padding-top: 3%
 
-// ≤1280px
-+media-breakpoint-up(lg)
 
+    .carousel-control-prev-icon,.carousel-control-next-icon
+        width: 2vw
+        height: 3vw
+
+    .carousel-indicators
+        bottom: -1vw
+        li
+            width: 10px
+            height: 10px
+
+    .logo
+        padding-left: 5px
+        a img
+            width: 45px
+            height: 45px
