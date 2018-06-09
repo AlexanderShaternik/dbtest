@@ -1,5 +1,4 @@
-
-
+@import "vars"
 
 // ≥1280px
 +media-breakpoint-down(xl)
@@ -10,6 +9,12 @@
 
     .logo
         padding-left: 25px
+
+    .section
+        .container
+            .tagline
+                margin-left: 512px
+
 
 // ≥768px
 +media-breakpoint-down(md)
@@ -47,6 +52,7 @@
     .section
         .container
             .tagline
+                margin-left: 384px
                 font-size: 24px
                 top: 12px
 
@@ -100,7 +106,8 @@
     .section
         .container
             .tagline
-                font-size: 2vw
+                margin-left: 50%
+                font-size: 2.5vw
                 top: 3%
     .language
         font-family: robotobold,sans-serif
